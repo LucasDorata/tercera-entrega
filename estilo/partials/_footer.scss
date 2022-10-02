@@ -1,0 +1,13 @@
+.pie{
+    position: relative;
+    top: 50%;
+    right: 10px;
+    .pie a{
+        color: map-get($colores, color);
+        .parrafo_pie{
+            position: relative;
+            top: 25%;
+            left: 10px;
+        }
+    }   
+}

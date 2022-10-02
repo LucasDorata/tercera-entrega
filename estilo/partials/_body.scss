@@ -1,0 +1,99 @@
+body{
+    background-color: map-get($colores, background-color);
+    .alinear{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        font-size: 30px;
+        .conjunto{
+            margin-top: 1%;
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
+            width: 50%;
+            .subtitulo1{
+                border: map-get($colores, border);
+                border-radius: 3px;
+                text-align: center;
+                .parrafo{
+                    font-size: 30px;
+                }
+            }
+        }
+        .imagenes_index{
+            margin-top: 1%;
+            margin-bottom: 1%;
+            text-align: center center;
+            width: 400px;
+            height: 400px;
+        }
+    }
+    .subtitulo_variado{
+        text-align: center;
+        @include subtitulos($color: #684108);
+    }
+    h2{
+        @include subtitulos($color: #684108);
+    }
+    .las_imagenes{
+        border: 1px solid;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        .card{
+            @extend %cartas;
+        }
+    }
+    .formulario{
+        display: flex;
+        justify-content: space-around;
+        .parrafo-contacto{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-top: 1%;
+            font-size: 26px;
+            margin-top: 15%;
+            text-align: center;
+            .titulo_contacto{
+                text-align: center;
+            }
+        }
+    }
+    form{
+        margin-bottom: 1%;
+    }  
+    @media screen and (max-width: 870px) {
+        
+        .alinear{
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3);
+        }
+    
+        .conjunto{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+    
+        .imagenes_index{
+            grid-row: 3;
+            width: 100%;
+            height: 25%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .las_imagenes{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-row: 4;
+            height: 20%;
+            position: relative;
+            bottom: 40%;
+        }
+    }
+}

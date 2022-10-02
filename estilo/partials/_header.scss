@@ -1,0 +1,32 @@
+.fondo{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-image: url(../images/madera.jpg); width: 100%;
+    color: map-get($colores, color);
+    background-position: center center;
+    background-attachment: fixed;
+    height: 150px;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    li{
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        top: 90px;
+        right: 10px;
+    }
+       li a{
+            color: map-get($colores, color);
+            border: map-get($colores, color) 1px solid;
+            width: 20px;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.6s;    
+        }        
+    li a:hover{
+        padding: 15px;
+    }
+}
