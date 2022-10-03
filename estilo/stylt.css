@@ -94,7 +94,7 @@ body .formulario {
   display: flex;
   justify-content: space-around;
 }
-body .formulario .parrafo-contacto {
+body .formulario .conjunto-contacto {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -103,7 +103,7 @@ body .formulario .parrafo-contacto {
   margin-top: 15%;
   text-align: center;
 }
-body .formulario .parrafo-contacto .titulo_contacto {
+body .formulario .conjunto-contacto .titulo_contacto {
   text-align: center;
 }
 body form {
@@ -111,15 +111,17 @@ body form {
 }
 @media screen and (max-width: 870px) {
   body .alinear {
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3);
   }
+  body .parrafo {
+    text-align: left;
+    font-size: 16px;
+  }
   body .conjunto {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
   }
   body .imagenes_index {
     grid-row: 3;
@@ -131,10 +133,30 @@ body form {
   body .las_imagenes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row: 4;
-    height: 20%;
-    position: relative;
-    bottom: 40%;
+  }
+  body .formulario {
+    display: grid;
+    grid-template-rows: repeat(2);
+  }
+  body .conjunto-contacto {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+  }
+  body .titulo_contacto {
+    text-align: center;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+  body .parrafo-contacto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body form {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
