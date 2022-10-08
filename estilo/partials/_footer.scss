@@ -1,7 +1,10 @@
 .pie{
     position: relative;
-    top: 50%;
+    top: 5%;
     right: 10px;
+    a{
+        color: #fff;
+    }
     .pie a{
         color: map-get($colores, color);
         .parrafo_pie{
@@ -9,5 +12,5 @@
             top: 25%;
             left: 10px;
         }
-    }   
+    } 
 }

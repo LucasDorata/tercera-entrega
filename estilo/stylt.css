@@ -3,6 +3,8 @@ body .las_imagenes .card {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3%;
+  margin-top: 5%;
 }
 
 .fondo {
@@ -100,11 +102,13 @@ body .formulario .conjunto-contacto {
   width: 50%;
   margin-top: 1%;
   font-size: 26px;
-  margin-top: 15%;
   text-align: center;
 }
 body .formulario .conjunto-contacto .titulo_contacto {
   text-align: center;
+}
+body .formulario .conjunto-contacto .parrafo-contacto {
+  margin-top: 18%;
 }
 body form {
   margin-bottom: 1%;
@@ -132,7 +136,7 @@ body form {
   }
   body .las_imagenes {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   body .formulario {
     display: grid;
@@ -158,12 +162,19 @@ body form {
     margin-left: auto;
     margin-right: auto;
   }
+  body .pie {
+    display: grid;
+    grid-template-rows: auto;
+  }
 }
 
 .pie {
   position: relative;
-  top: 50%;
+  top: 5%;
   right: 10px;
+}
+.pie a {
+  color: #fff;
 }
 .pie .pie a {
   color: #fff;
